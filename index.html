@@ -3,56 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success - Site Live</title>
-    <style>
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            text-align: center;
-            background-color: #f4f7f6;
-            color: #333;
-            padding: 50px 20px;
-        }
-        .container {
-            max-width: 600px;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin: 0 auto;
-        }
-        h1 {
-            color: #2ecc71;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 30px;
-        }
-        .badge {
-            background-color: #e8f8f0;
-            color: #2ecc71;
-            padding: 6px 16px;
-            border-radius: 50px;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Richi Rich Restaurant - Delicious North Indian Cuisine in Lucknow</title>
+    <meta name="description" content="Experience authentic North Indian flavors at Richi Rich Restaurant in Aliganj, Lucknow. Perfect for family dining, celebrations, and affordable meals.">
+    <meta name="keywords" content="North Indian restaurant Lucknow, family restaurant Aliganj, affordable dining Lucknow, veg thali Lucknow, Richi Rich Restaurant">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-VkXQqRkzIcm1vZ2gkUBXaA0gOaPBQOQOYhKPtX82TzUWc6o2fWJ4pAzF9j7xZp1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍛</text></svg>">
 </head>
 <body>
-
-    <div class="container">
-        <!-- Status Badge -->
-        <span class="badge">✓ Deployment Successful</span>
-        
-        <!-- Main Heading -->
-        <h1>Your Website is Live!</h1>
-        
-        <!-- Subheading/Message -->
-        <p>The repository configuration is complete. You can now safely add all remaining project files, style sheets, and scripts.</p>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <div class="cherry-icon">🍒</div>
+            <h2 class="splash-text">100% Pure Veg</h2>
+        </div>
     </div>
 
+    <header>
+        <nav id="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#hero" class="logo-link">
+                        <img src="images/images.png" alt="Richi Rich Restaurant Logo" class="logo-image">
+                        <span class="logo-text">Richi Rich</span>
+                    </a>
+                </div>
+                <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#why-choose-us">Why Us</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Where Every Meal Feels Like a Celebration</h1>
+                <p>Delicious North Indian flavors, perfect for family time, gatherings, and everyday indulgence.</p>
+                <div class="trust-badge">
+                    <span class="pure-veg">🌱 100% Pure Vegetarian</span> | <span class="rating">⭐ 4.1 Rating</span> | <span class="reviews">2700+ Happy Customers</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#contact" class="btn btn-secondary">Reserve Table</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/IMG_20260506_204143.jpg" alt="Delicious North Indian food spread" loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="scroll-reveal fade-up">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text scroll-reveal slide-left">
+                    <h2>Our Story</h2>
+                    <p>Richi Rich Restaurant has been a beloved part of the Aliganj community in Lucknow for years, serving up authentic North Indian cuisine that brings families and friends together. From our signature Pav Bhaji to our comforting Veg Thali, every dish is crafted with care to create those special moments that turn ordinary meals into cherished memories.</p>
+                    <p>Whether it's a small birthday celebration, a casual family dinner, or just satisfying your cravings for street food favorites, we're here to make every visit memorable. Our affordable prices and warm, inviting atmosphere make us the perfect choice for budget-conscious diners who don't want to compromise on quality or taste.</p>
+                </div>
+                <div class="about-image scroll-reveal slide-right">
+                    <img src="images/story.jpeg" alt="Cozy restaurant interior" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="scroll-reveal fade-up">
+        <div class="container">
+            <div class="pure-veg-section-badge">🌱 100% PURE VEGETARIAN 🌱</div>
+            <h2>Our Menu</h2>
+            <p>Discover our delicious selection of authentic North Indian vegetarian dishes, from street food classics to hearty main courses.</p>
+            <div id="category-buttons"></div>
+            <div id="menu-table-container">
+                <table id="menu-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th class="price">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-table-body">
+                        <!-- Menu items will be generated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="scroll-reveal fade-up">
+        <div class="container">
+            <h2>Why Choose Richi Rich?</h2>
+            <div class="features">
+                <div class="feature scroll-reveal scale-up">
+                    <div class="feature-icon">💰</div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Quality food at prices that won't break the bank</p>
+                </div>
+                <div class="feature scroll-reveal scale-up">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family-Friendly Ambience</h3>
+                    <p>Perfect environment for families and small gatherings</p>
+                </div>
+                <div class="feature scroll-reveal scale-up">
+                    <div class="feature-icon">🍽️</div>
+                    <h3>Variety of Dishes</h3>
+                    <p>Wide range of North Indian and street food options</p>
+                </div>
+                <div class="feature scroll-reveal scale-up">
+                    <div class="feature-icon">🎉</div>
+                    <h3>Perfect for Celebrations</h3>
+                    <p>Ideal spot for birthdays and special occasions</p>
+                </div>
+                <div class="feature scroll-reveal scale-up">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Quick Service</h3>
+                    <p>Efficient service to keep your dining experience smooth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Great place for family dinners. The food is delicious and the prices are very reasonable. We love coming here for celebrations!"</p>
+                        <div class="testimonial-author">
+                            <strong>Rajesh Kumar</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Perfect for small parties. The Veg Thali is amazing and the service is quick. Highly recommend for budget dining."</p>
+                        <div class="testimonial-author">
+                            <strong>Priya Sharma</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Value for money meals. The Pav Bhaji and Chilli Paneer are must-try. Great atmosphere for students and families."</p>
+                        <div class="testimonial-author">
+                            <strong>Amit Singh</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Fresh taste every time. Their North Indian gravies are super flavorful and the portions are generous. We’ll definitely visit again!"</p>
+                        <div class="testimonial-author">
+                            <strong>Neha Verma</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Loved the taste of the Dal Tadka and the aroma of their curries. Service was friendly and food arrived quickly."</p>
+                        <div class="testimonial-author">
+                            <strong>Vikram Joshi</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Family-friendly and affordable—exactly what we needed. The tandoori platter was delicious and everything tasted homemade."</p>
+                        <div class="testimonial-author">
+                            <strong>Shreya Gupta</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"We ordered takeaway and it was still hot and fresh. Manchurian and Paneer dishes were top-notch. Great job team!"</p>
+                        <div class="testimonial-author">
+                            <strong>Rahul Mehta</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Perfect spot for lunch. The Veg Thali has everything you want—balanced, tasty, and satisfying. Best in the area!"</p>
+                        <div class="testimonial-author">
+                            <strong>Tanya Khan</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Celebrated a birthday here and it was amazing. Staff was helpful, food was delicious, and the vibe was great."</p>
+                        <div class="testimonial-author">
+                            <strong>Rohit Yadav</strong>
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="scroll-reveal fade-up">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Delicious food spread" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/WhatsApp Image 2026-05-08 at 7.34.10 PM.jpeg" alt="Restaurant interior" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/WhatsApp Image 2026-05-08 at 7.34.11 PM (1).jpeg" alt="Family dining" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/WhatsApp Image 2026-05-08 at 7.34.11 PM (2).jpeg" alt="Paneer dishes" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Celebration setup" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/Screenshot_2026-05-06-20-54-25-967_com.google.android.apps.maps.jpg" alt="Celebration setup" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/Screenshot_2026-05-06-20-53-42-651_com.google.android.apps.maps.jpg" alt="Celebration setup" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/Screenshot_2026-05-06-20-53-36-599_com.google.android.apps.maps.jpg" alt="Celebration setup" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/Screenshot_2026-05-06-20-53-34-052_com.google.android.apps.maps.jpg" alt="Celebration setup" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/Screenshot_2026-05-06-20-53-02-321_com.google.android.apps.maps.jpg" alt="Celebration setup" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/WhatsApp Image 2026-05-08 at 7.34.11 PM (3).jpeg" alt="Celebration setup" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/WhatsApp Image 2026-05-08 at 7.34.12 PM (1).jpeg" alt="Celebration setup" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/WhatsApp Image 2026-05-08 at 7.34.12 PM (2).jpeg" alt="Celebration setup" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/WhatsApp Image 2026-05-08 at 7.34.12 PM.jpeg" alt="Celebration setup" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-reveal scale-up">
+                    <img src="images/WhatsApp Image 2026-05-08 at 7.34.13 PM.jpeg" alt="Celebration setup" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="scroll-reveal fade-up">
+        <div class="container">
+            <h2>Visit Us</h2>
+            <div class="contact-content">
+                <div class="contact-info scroll-reveal slide-left">
+                    <div class="contact-item">
+                        <h3>📍 Address</h3>
+                        <p>B 2/18, Sector K, near IGNOU, Purania Chauraha, Aliganj, Lucknow, Uttar Pradesh 226024</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p><a href="tel:08090012545">080900 12545</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🕒 Hours</h3>
+                        <p>Open daily until 10:30 PM</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🚗 Services</h3>
+                        <p>Dine-in, Takeaway, Delivery</p>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="tel:08090012545" class="btn btn-primary">Call to Reserve</a>
+                        <a href="https://www.google.com/maps/place/Richi+Rich+Restaurant/@26.894594,80.942896,17z/data=!4m10!1m2!2m1!1sB+2%2F18,+Sector+K,+near+IGNOU,+Purania+Chauraha,+Aliganj,+Lucknow,+Uttar+Pradesh+226024!3m6!1s0x3999562d55e431ab:0x14a19d4084cd67fd!8m2!3d26.895348!4d80.9420488!15sClZCIDIvMTgsIFNlY3RvciBLLCBuZWFyIElHTk9VLCBQdXJhbmlhIENoYXVyYWhhLCBBbGlnYW5qLCBMdWNrbm93LCBVdHRhciBQcmFkZXNoIDIyNjAyNFpSIlBiIDIgMTggc2VjdG9yIGsgbmVhciBpZ25vdSBwdXJhbmlhIGNoYXVyYWhhIGFsaWdhbmogbHVja25vdyB1dHRhciBwcmFkZXNoIDIyNjAyNJIBF25vcnRoX2luZGlhbl9yZXN0YXVyYW50mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVIxTlZsSGExWlJFQUXgAQD6AQQIABBK!16s%2Fg%2F11c3kdmbk3?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="btn btn-secondary">Get Direction</a>
+                    </div>
+                </div>
+                <div class="map scroll-reveal slide-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3558.280424560971!2d80.942896!3d26.894594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999562d55e431ab%3A0x14a19d4084cd67fd!2sRichi%20Rich%20Restaurant!5e0!3m2!1sen!2sus!4v1778584034092!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Richi Rich Restaurant</h3>
+                    <p>Delicious Moments, Shared Together</p>
+                    <p>North Indian cuisine in the heart of Aliganj, Lucknow</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 <a href="tel:08090012545">080900 12545</a></p>
+                    <p>📍 Aliganj, Lucknow</p>
+                    <p>🕒 Open till 10:30 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect with Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/richirichlucknow?igsh=MW80NnUydWR2dXk4bA==" class="social-icon" aria-label="Instagram">
+                            <img src="images/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://zomato.onelink.me/xqzv/xunsaf7v" class="social-icon" aria-label="Zomato">
+                            <img src="images/zomato.png" alt="Zomato">
+                        </a>
+                        <a href="https://www.swiggy.com/menu/423644?source=sharing" class="social-icon" aria-label="Swiggy">
+                            <img src="images/swiggy.png" alt="Swiggy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Richi Rich Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
